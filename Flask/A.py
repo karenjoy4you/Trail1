@@ -1,4 +1,4 @@
-from flask import Flask,render_template		#render template HTML Code from another file
+from flask import Flask,render_template, url_for	#render template HTML Code from another file
 app = Flask(__name__, template_folder='templates')	 #templates and static files
 
 posts = [	#dummy data
@@ -26,7 +26,7 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template('about.html',title='about')
 
 @app.route("/login")
 def login():
