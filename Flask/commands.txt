@@ -1,0 +1,13 @@
+cd Flask
+
+set FLASK_APP=A.py
+
+flask run
+
+set FLASK DEBUG=1
+
+---------------------------------------------
+commands in sublime text.
+for routes.
+
+@app.route("/") 
