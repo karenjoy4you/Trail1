@@ -1,14 +1,10 @@
-<html>
-<head>
-	<title>Home</title>
-</head>
-<body>
+{%extends "layout.html"%}
 
-	{%for post in posts %}	#argument passed in A.py
+{%block content%}
+	{%for post in posts %}		<!-- #argument passed in A.py -->
 		<h1>{{post.title}}</h1>
 		<p>By {{post.author}} on {{post.date_posted}}</p>
 		<p>{{post.content}}</p>
 
 	{% endfor %}
-</body>
-</html>
+{% endblock content %}
